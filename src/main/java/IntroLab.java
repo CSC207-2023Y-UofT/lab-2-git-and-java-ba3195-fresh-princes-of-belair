@@ -7,7 +7,6 @@
 
 public class IntroLab {
 
-    // hello
 
     /**
      * Returns a message depending on the given greeting, name, message, and
