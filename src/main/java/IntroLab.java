@@ -40,6 +40,22 @@ public class IntroLab {
      * As a reference, we've provided the sample method exampleStudent.
      * Make sure you document your method properly!
      */
+    public static int fibonacci(int number) {
+        int first = 1;
+        int second = 1;
+        int temp;
+
+        if (number == 1 || number == 2) {
+            return 1;
+        }
+
+        for (int i = 0; i < number - 2; i ++ ) {
+            temp = second;
+            second += first;
+            first = temp;
+        }
+        return second;
+    }
 
     /**
      * An example method that calls on printLabMessage.
@@ -59,6 +75,7 @@ public class IntroLab {
          * As a reference, we've provided a sample call to exampleStudent
          * above. Afterwards: run this file to see the output!
          */
+        System.out.println(fibonacci(5));
 
 
     }

@@ -30,4 +30,12 @@ public class IntroLabTest {
      *       the test results.
      * As a reference, we've included testExampleStudent above.
      */
+
+    @Test(timeout = 1000)
+    public void testFibonacciTime() {
+        IntroLab temp = new IntroLab();
+        int expected = 102334155;
+
+        assertEquals(temp.fibonacci(40), expected);
+    }
 }
